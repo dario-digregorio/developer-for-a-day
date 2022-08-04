@@ -36,6 +36,8 @@ All user stories can be found in the [product backlog](https://miro.com/app/boar
 
 * `developer-for-a-day.pptx` -> the introductory presentation
 
+    In case you are unfamiliar with Scrum, it is also advisable to read the [Scrum Primer](https://scrumprimer.org/scrumprimer20.pdf).
+
 * `Makefile` -> a collection of useful commands to start the backend microservices on localhost in DEV mode or as Docker containers 
 
 * `developer-for-a-day.postman_collection.json` -> a Postman collection of REST API requests to test your implementation
