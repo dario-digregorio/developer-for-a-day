@@ -6,6 +6,11 @@ import 'package:weather_app/models/station.dart';
 
 class WeatherService {
   late http.Client httpClient;
+  // For Android Emulator '10.0.2.2'
+  // For iOS Simulator  'localhost' or '127.0.0.1'
+  // For Browser 'localhost' or '127.0.0.1'
+  // and run `flutter run -d chrome --web-port=8080 --web-hostname=*your machine IP Address*`
+
   static const localIP = '10.0.2.2'; // for Android Emulator
   static const stationPort = '8200';
   static const endPointUrl = 'http://$localIP:$stationPort/api';

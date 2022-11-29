@@ -9,7 +9,10 @@ You will implement features for an [Flutter](https://flutter.dev//) Cross Plattf
 #### What you need to start
 - Follow the get started guide on the [Flutter Get Startet](https://flutter.dev/docs/get-started/install)
 - You need to have a device or emulator to run the app
+  - To run the app on an Android device you need to enable developer mode on your device, enable USB debugging and install Android Studio
+  - To run the app on an iOS device you need a Mac with Xcode installed 
 - Install the initial flutter app on that device (follow the guide)
+- Make sure you use the right IP address in `weather_service.dart` to communicate with the backend from the device
 - That's it, you are ready to go!
 
 #### Useful Links
