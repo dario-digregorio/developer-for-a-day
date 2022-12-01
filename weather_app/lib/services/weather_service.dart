@@ -51,15 +51,7 @@ class WeatherService {
   }
 
   Future<void> addStation(String stationName) async {
-    final response =
-        await httpClient.post(Uri.parse('$endPointUrl/station/$stationName'));
-
-    if (response.statusCode <= 300) {
-      log("Station $stationName added");
-    } else {
-      // If that response was not OK, throw an error.
-      throw Exception('Failed to add station $stationName');
-    }
+    //TODO add station API
   }
 
   Future<void> deleteStation(String stationName) async {

@@ -7,13 +7,13 @@
 You will implement features for an [Flutter](https://flutter.dev//) Cross Plattform Application. The App shows weather stations that are fetched from the weather backend. The Project comes with all the tools and UI elements that you need. Flutter are written in Dart. Take a look at the useful links section for reading material.
 
 #### What you need to start
-- Follow the get started guide on the [Flutter Get Startet](https://flutter.dev/docs/get-started/install)
-- You need to have a device or emulator to run the app
-  - To run the app on an Android device you need to enable developer mode on your device, enable USB debugging and install Android Studio
-  - To run the app on an iOS device you need a Mac with Xcode installed 
-- Install the initial flutter app on that device (follow the guide)
-- Make sure you use the right IP address in `weather_service.dart` to communicate with the backend from the device
-- That's it, you are ready to go!
+1. Follow the get started guide on the [Flutter Get Startet](https://flutter.dev/docs/get-started/install)
+2. You need to have a device or emulator to run the app
+     - To run the app on an Android device you need to enable developer mode on your device, enable USB debugging and install Android Studio
+     - To run the app on an iOS device you need a Mac with Xcode installed 
+3. Install the initial flutter app on that device (follow the guide)
+4. Make sure you use the right IP address in `weather_service.dart` to communicate with the backend from the device
+5. That's it, you are ready to go!
 
 #### Useful Links
 

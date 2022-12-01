@@ -8,6 +8,7 @@ import javax.enterprise.context.ApplicationScoped;
 public class WeatherCollector {
 
   public WeatherMap collectDataFromStation () {
+    // TODO: implement
     return new WeatherMap();
   }
 
