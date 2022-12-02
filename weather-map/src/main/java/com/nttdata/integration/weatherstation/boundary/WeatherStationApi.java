@@ -15,4 +15,6 @@ import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 @Produces("application/json")
 public interface WeatherStationApi {
 
+  // TODO: provide method signatures for the relevant REST endpoints of the weather station microservice
+
 }

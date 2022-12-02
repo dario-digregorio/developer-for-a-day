@@ -3,6 +3,7 @@ package com.nttdata;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
 import org.jboss.logging.Logger;
 
+import javax.enterprise.inject.Instance;
 import javax.ws.rs.client.ClientRequestContext;
 import javax.ws.rs.client.ClientRequestFilter;
 import javax.ws.rs.client.ClientResponseContext;
@@ -48,8 +49,8 @@ public class LoggingFilter
 
   private static final Comparator<Map.Entry<String, List<String>>> COMPARATOR = (o1, o2) -> o1.getKey().compareToIgnoreCase(o2.getKey());
 
-  @ConfigProperty(name = "jaxrs.logging", defaultValue = "false")
-  boolean loggingEnabled;
+  @ConfigProperty(name = "jaxrs.logging")
+  Instance<Boolean> loggingEnabled;
 
   private final AtomicLong atomicId = new AtomicLong(0);
   private final int maxEntitySize;
@@ -59,7 +60,7 @@ public class LoggingFilter
   }
 
   private void log(final StringBuilder b) {
-    if (loggingEnabled) {
+    if (loggingEnabled.get()) {
       LOGGER.info(b.toString());
     }
   }
